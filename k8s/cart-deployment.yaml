@@ -5,7 +5,7 @@ metadata:
 type: Opaque
 data:
   MONGODB_URI: bW9uZ29kYitzcnY6Ly8zN20yZF9kYl91c2VyOkhIcWgyakJYemdEcE9HeFJAY2x1c3RlcjAuc290dW9xeC5tb25nb2RiLm5ldC9lY29tbWVyY2VfdXNlcnM=
-  PRODUCT_SERVICE_URL: aHR0cDovL2xvY2FsaG9zdDozMDAy
+
 
 ---
 
@@ -37,11 +37,7 @@ spec:
                   name: cart-service-secret
                   key: MONGODB_URI
             - name: PRODUCT_SERVICE_URL
-              valueFrom:
-                secretKeyRef:
-                  name: cart-service-secret
-                  key: PRODUCT_SERVICE_URL
-
+              value: http://product-service:3002
 ---
 
 apiVersion: v1
