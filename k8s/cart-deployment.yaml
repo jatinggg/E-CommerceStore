@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: cart-service
-          image: shrijatin/cart
+          image: public.ecr.aws/f8g8h5d4/jatin-ecommerce:cart
           ports:
             - containerPort: 3003
           env:

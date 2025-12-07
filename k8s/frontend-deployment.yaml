@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-service
-          image: shrijatin/frontend
+          image: public.ecr.aws/f8g8h5d4/jatin-ecommerce:frontend
           ports:
             - containerPort: 3000
           env:
@@ -40,4 +40,4 @@ spec:
     app: frontend-service
   ports:
     - port: 3000
-      targetPort: 3000
+      targetPort: 80

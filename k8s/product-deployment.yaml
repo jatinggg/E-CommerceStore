@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: shrijatin/product
+          image: public.ecr.aws/f8g8h5d4/jatin-ecommerce:product
           ports:
             - containerPort: 3002
           env:

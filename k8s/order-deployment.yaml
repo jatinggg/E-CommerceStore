@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: shrijatin/order
+          image: public.ecr.aws/f8g8h5d4/jatin-ecommerce:order
           ports:
             - containerPort: 3004
           env:
